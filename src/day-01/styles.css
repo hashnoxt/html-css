@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -28,4 +40,39 @@ li a {
 
 li a:nth-last-child() {
   padding-right: 120px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box > p {
+  margin-right: 10px;
+}
+
+.content-box {
+  box-sizing: content-box;
+  background-color: red;
+  margin: 20px;
+  padding: 20px;
+  color: wheat;
+  border: 3px solid black;
+  font-family: "JetBrainsMono";
+  font-weight: bold;
+  font-size: 30px;
+  width: 500px;
+}
+
+.border-box {
+  width: 500px;
+  box-sizing: border-box;
+  font-family: "JetBrainsMono";
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px;
+  background-color: red;
+  padding:20px;
+  border: 3px solid black;
 }
