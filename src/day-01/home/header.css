@@ -1,0 +1,6 @@
+.headerReplacement {
+  text-indent: -100px;
+  width: 50px;
+  height: 10px;
+  background: url(/src/day-01/images/pexels.jpg) #cccccc no-repeat;
+}
